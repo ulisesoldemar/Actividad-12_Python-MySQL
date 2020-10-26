@@ -53,5 +53,6 @@ while True:
             file_like = BytesIO(row[8])
             img = Image.open(file_like)
             img.show()
+            img.close()
     elif op == '0':
         break
